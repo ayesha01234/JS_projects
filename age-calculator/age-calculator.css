@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #455a64; /* Dark blue-green */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: background-change 5s infinite;
+}
+
+.age-container {
+  border-radius: 10px;
+  padding: 30px;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 #2c3e50; /* Dark blue */
+  background-color: #95a5a6; /* Light gray-blue */
+  animation: container-change 3s infinite;
+}
+
+.age-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px;
+  color: #000000; /* Orange */
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.age-dob-input {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #395658; /* Gray-blue */
+  color: white;
+}
+
+.age-result{
+    font-size: 1.3rem;
+  font-weight: bold;
+}
+.calculate-btn {
+  font-size: 1.2rem;
+  width: 200px;
+  height: 40px;
+  background-color: #1abc9c; /* Green-blue */
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: button-change 2s infinite;
+}
+
+/* Added animations */
+@keyframes background-change {
+  0% {
+    background-color: #455a64;
+  }
+  50% {
+    background-color: #95a5a6;
+  }
+  100% {
+    background-color: #455a64;
+  }
+}
+
+@keyframes container-change {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes button-change {
+  0% {
+    background-color: #1abc9c;
+  }
+  50% {
+    background-color: #f39c12;
+  }
+  100% {
+    background-color: #1abc9c;
+  }
+}
+
